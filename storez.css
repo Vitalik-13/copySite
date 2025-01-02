@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Optima";
+  src: url("./fonts/OptimaLTPro-Roman.woff2") format("woff2");
+  src: url("./fonts/OptimaLTPro-Roman.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.foto-models-container {
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 1%;
+  position: relative;
+  justify-content: center;
+  z-index: 3;
+  padding-left: 35px;
+}
+.foto-models-wrapper {
+  flex: 0 0 30%;
+}
+.foto-models-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.foto-models-title {
+  margin-top: 25px;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+}
+.button-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  background-color: #9e4743;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.title-span-container {
+  display: flex;
+  align-items: end;
+  gap: 0 30px;
+  transition: all 0.5s ease;
+}
+.foto-block {
+  position: relative;
+}
+.text-block-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9e4743;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 50px 0;
+  color: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.open-hours-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.how-to-find-us-title {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.button-apsolute {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 25px 10px;
+  width: 90%;
+  color: white;
+  font-size: 32px;
+  margin-top: 50px;
+  border-radius: 20px;
+  cursor: none;
+  margin: 50px auto 0;
+}
+.show-block {
+  z-index: 2;
+  height: 100%;
+  opacity: 1;
+}
+.foto-models-wrapper:hover .text-block-container {
+  opacity: 1;
+}
+.show-opacity {
+  opacity: 1;
+}
+@media (max-width: 900px) {
+  .foto-models-wrapper {
+    flex: 0 0 48%;
+  }
+}
+@media (max-width: 750px) {
+  .button-apsolute {
+    margin: 40px auto 0;
+  }
+  .foto-models-wrapper {
+    flex: 0 0 70%;
+  }
+}
+@media (max-width: 600px) {
+  .foto-models-container {
+    padding: 0;
+  }
+  .foto-models-container {
+    justify-content: center;
+  }
+  .open-hours-title {
+    margin-bottom: 30px;
+  }
+  /* .button-apsolute {
+    margin: 20px auto 0;
+  } */
+}
+@media (max-width: 550px) {
+  .open-hours-title {
+    margin-bottom: 30px;
+  }
+
+  .button-apsolute {
+    display: block;
+    font-size: 20px;
+    padding: 20px 0;
+    width: 90%;
+    padding: 25px 5px;
+  }
+  .open-hours-title {
+    margin-bottom: 28px;
+    font-size: 22px;
+  }
+
+  .how-to-find-us-title {
+    font-size: 16px;
+  }
+}
